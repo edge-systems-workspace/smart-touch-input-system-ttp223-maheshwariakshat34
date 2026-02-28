@@ -16,4 +16,5 @@ void loop() {
     } else {
         Serial.println("No Touch");
     }
+    delay(300);
 }
