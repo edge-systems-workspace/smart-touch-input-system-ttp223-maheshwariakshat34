@@ -8,3 +8,12 @@ void setup() {
     pinMode(touchPin, INPUT);
     Serial.println("System Ready");
 }
+void loop() {
+    touchState = digitalRead(touchPin);
+
+    if (touchState == HIGH) {
+        Serial.println("Touch Detected");
+    } else {
+        Serial.println("No Touch");
+    }
+}
